@@ -1,0 +1,12 @@
+[General]
+ConfigVersion=1
+
+[MainWindow]
+ToolBarsMovable=Disabled
+
+[MemorySettings]
+EnableMemoryMonitoring=true
+MemoryLimitValue=4096
+
+[UiSettings]
+ColorScheme=
