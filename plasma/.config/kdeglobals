@@ -134,7 +134,7 @@ ForegroundVisited=155,89,182
 
 [DirSelect Dialog]
 DirSelectDialog Size[$i]=884,576
-History Items[$e]=file:$HOME/Desktop
+History Items[$e]=file:///Shared/@Repo/NixOS,file:///Shared/@Repo,file:///etc/nixos/,file:///etc/nixos,file:///Shared/@Repo/NixOS/,file:///mnt/NixOS/Shared/@Repo/NixOS,file:///Volume/@Pot/Software/DiskImgs/VirtDir,file:$HOME/Desktop
 
 [General]
 ColorSchemeHash=4a48bd34ba53d580d8594cb0216221e77518509f

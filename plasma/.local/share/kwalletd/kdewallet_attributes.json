@@ -1,0 +1,14 @@
+{
+    "$fdo_created": "1728113991",
+    "$fdo_modified": "1728114205",
+    "GitHub - https://api.github.com/siryoussef": {
+        "$fdo_created": "1728114205",
+        "$fdo_mime_type": "text/plain",
+        "$fdo_modified": "1728114205",
+        "attributes": {
+            "account": "siryoussef",
+            "service": "GitHub - https://api.github.com",
+            "xdg:schema": "org.freedesktop.Secret.Generic"
+        }
+    }
+}

@@ -41,14 +41,51 @@ Chars To Enclose Selection[$i]=<>(){}[]'"`
 Input Mode[$i]=0
 
 [KTextEditor::Search]
-Replace History=paths.storage,paths.pkglists,,p,k,settings.user,settings.system,settings.user.name,system = settings.system.arch;,settings.system.arch,org.garudalinux.firedragon,virtualization,zen,nixpkgs,nixpkgs-stable,nixpkgs-unstable,nixpkgs-unstable";,"nixpkgsRef/nixpkgs-unstable";,"nixpkgsRef/nixpkgs-stable";,"nixpkgs/nixpkgs-unstable";,"nixpkgs/nixpkgs";,nixpkgs.follows = "nixpkgs",(
-Search History=storagePath,pkglistsPath,services,spice,polkit,boot,.config/p,.config/k,userSettings,systemSettings,userSettings.username,system = settings.system;,settings.system,git,floorp.desktop,droidcam,gc,virtualisation,libvirt,nixvirt,floorp,thorium,nixpkgs-patched,pkgs,nix,hyprland,storage,docker,nixpkgsRef,sgx,nixpkgsRef/nixpkgs-stable,nixpkgsRef/nixpkgs-unstable,nixpkgsRef/nixpkgs-unstable";,nixpkgRef,nixpkgs,emacs,packages,"nixpkgs","nixpkgs-unstable";,"nixpkgs-stable";,"nixpkgs/nixpkgs-unstable";,path,path:.,path.,"nixpkgs/nixpkgs";,"nixpkgs";,lix,icon,icons,settings.nix,home-manager.follows,nixpkgs.follows = "Settings",(Settings.,Settings.,fsType = "none"; options = [ "bind" ];
+Replace History=${settings.user.username},thunderbird,waydroid,./libvirt,,paths.storage,paths.pkglists,p,k,settings.user,settings.system,settings.user.name,system = settings.system.arch;,settings.system.arch,org.garudalinux.firedragon,virtualization,zen,nixpkgs,nixpkgs-stable,nixpkgs-unstable,nixpkgs-unstable";,"nixpkgsRef/nixpkgs-unstable";,"nixpkgsRef/nixpkgs-stable";,"nixpkgs/nixpkgs-unstable";,"nixpkgs/nixpkgs";,nixpkgs.follows = "nixpkgs",(
+Search History=config,youssef,manager,droidcam,floorp,vscod,vscode,git,plasma,../virtualisation/libvirt,../,winapps,hyperv,dbus,storagePath,pkglistsPath,services,spice,polkit,boot,.config/p,.config/k,userSettings,systemSettings,userSettings.username,system = settings.system;,settings.system,floorp.desktop,gc,virtualisation,libvirt,nixvirt,thorium,nixpkgs-patched,pkgs,nix,hyprland,storage,docker,nixpkgsRef,sgx,nixpkgsRef/nixpkgs-stable,nixpkgsRef/nixpkgs-unstable,nixpkgsRef/nixpkgs-unstable";,nixpkgRef,nixpkgs,emacs,packages,"nixpkgs","nixpkgs-unstable";,"nixpkgs-stable";,"nixpkgs/nixpkgs-unstable";,path,path:.,path.,"nixpkgs/nixpkgs";,"nixpkgs";,lix,icon,icons,settings.nix,home-manager.follows,nixpkgs.follows = "Settings",(Settings.,Settings.,fsType = "none"; options = [ "bind" ];
+
+[Kate Print Settings][Margins]
+bottom=5.47
+left=6.35
+right=6.35
+top=5.47
 
 [MainWindow]
 1536x864 screen: Window-Maximized=true
-2 screens: Height=794
-2 screens: Width=928
+2 screens: Height=834
+2 screens: Width=720
 2 screens: Window-Maximized=true
+
+[Printing][HeaderFooter]
+FooterBackground=211,211,211
+FooterBackgroundEnabled=false
+FooterEnabled=true
+FooterForeground=0,0,0
+FooterFormatCenter=
+FooterFormatLeft=
+FooterFormatRight=%U
+HeaderBackground=211,211,211
+HeaderBackgroundEnabled=false
+HeaderEnabled=true
+HeaderFooterFont=Hack,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+HeaderForeground=0,0,0
+HeaderFormatCenter=%f
+HeaderFormatLeft=%y
+HeaderFormatRight=%p
+
+[Printing][Layout]
+BackgroundColorEnabled=false
+BoxColor=invalid
+BoxEnabled=false
+BoxMargin=6
+BoxWidth=1
+ColorScheme=Printing
+Font=Hack,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+
+[Printing][Text]
+DontPrintFoldedCode=true
+Legend=false
+LineNumbers=false
 
 [UiSettings]
 ColorScheme[$i]=Krita dark orange
@@ -65,7 +102,7 @@ sortRole=0
 viewShade=81,49,95
 
 [lspclient]
-AllowedServerCommandLines=/etc/profiles/per-user/youssef/bin/nil,/run/current-system/sw/bin/bash-language-server start
+AllowedServerCommandLines=/etc/profiles/per-user/youssef/bin/bash-language-server start,/etc/profiles/per-user/youssef/bin/marksman server,/etc/profiles/per-user/youssef/bin/nil,/home/youssef/.nix-profile/bin/bash-language-server start,/home/youssef/.nix-profile/bin/nil,/run/current-system/sw/bin/bash-language-server start
 AutoHover=true
 AutoImport=true
 BlockedServerCommandLines=
