@@ -1,19 +1,67 @@
+[BuildConfig]
+AllowedCommandLines=
+AutoSwitchToOutput=true
+BlockedCommandLines=
+UseDiagnosticsOutput=true
+
+[ColorPicker]
+HexLengths=3,6,9,12
+NamedColors=false
+PreviewAfterColor=true
+
+[ColoredBrackets]
+color1=#1275ef
+color2=#f83c1f
+color3=#9dba1e
+color4=#e219e2
+color5=#37d21c
+
 [FileDialogSize]
 2 screens: Height=794
 2 screens: Width=1056
 2 screens: Window-Maximized=true
 
 [General]
+Allow Tab Scrolling=true
+Auto Hide Tabs=false
+Close After Last=false
+Close documents with window=true
 Days Meta Infos=30
+Diagnostics Limit=12000
+Diff Show Style=0
+Elide Tab Text=false
+Expand Tabs=false
+Icon size for left and right sidebar buttons=32
 Last Session=nixos-disaster
+Modified Notification=false
+Mouse back button action=0
+Mouse forward button action=0
+Open New Tab To The Right Of Current=false
+Output History Limit=100
+Output With Date=false
+Recent File List Entry Count=10
+Restore Window Configuration=true
+SDI Mode=false
 Save Meta Infos=true
 Session Manager Sort Column=0
 Session Manager Sort Order=0
 Show Full Path in Title=false
 Show Menu Bar=true
 Show Status Bar=true
+Show Symbol In Navigation Bar=true
 Show Tab Bar=true
+Show Tabs Close Button=true
 Show Url Nav Bar=true
+Show output view for message type=1
+Show text for left and right sidebar=false
+Show welcome view for new window=true
+Startup Session=manual
+Stash new unsaved files=true
+Stash unsaved file changes=false
+Sync section size with tab positions=false
+Tab Double Click New Document=true
+Tab Middle Click Close Document=true
+Tabbar Tab Limit=0
 
 [KTextEditor Document]
 Auto Detect Indent[$i]=true
@@ -41,8 +89,8 @@ Chars To Enclose Selection[$i]=<>(){}[]'"`
 Input Mode[$i]=0
 
 [KTextEditor::Search]
-Replace History=${settings.user.username},thunderbird,waydroid,./libvirt,,paths.storage,paths.pkglists,p,k,settings.user,settings.system,settings.user.name,system = settings.system.arch;,settings.system.arch,org.garudalinux.firedragon,virtualization,zen,nixpkgs,nixpkgs-stable,nixpkgs-unstable,nixpkgs-unstable";,"nixpkgsRef/nixpkgs-unstable";,"nixpkgsRef/nixpkgs-stable";,"nixpkgs/nixpkgs-unstable";,"nixpkgs/nixpkgs";,nixpkgs.follows = "nixpkgs",(
-Search History=config,youssef,manager,droidcam,floorp,vscod,vscode,git,plasma,../virtualisation/libvirt,../,winapps,hyperv,dbus,storagePath,pkglistsPath,services,spice,polkit,boot,.config/p,.config/k,userSettings,systemSettings,userSettings.username,system = settings.system;,settings.system,floorp.desktop,gc,virtualisation,libvirt,nixvirt,thorium,nixpkgs-patched,pkgs,nix,hyprland,storage,docker,nixpkgsRef,sgx,nixpkgsRef/nixpkgs-stable,nixpkgsRef/nixpkgs-unstable,nixpkgsRef/nixpkgs-unstable";,nixpkgRef,nixpkgs,emacs,packages,"nixpkgs","nixpkgs-unstable";,"nixpkgs-stable";,"nixpkgs/nixpkgs-unstable";,path,path:.,path.,"nixpkgs/nixpkgs";,"nixpkgs";,lix,icon,icons,settings.nix,home-manager.follows,nixpkgs.follows = "Settings",(Settings.,Settings.,fsType = "none"; options = [ "bind" ];
+Replace History=${log},${winapps-setup} ,${sudo} ,,vscode,build-support/emacs/,name = args.name or "emacs-${finalAttrs.pname}${lib.optionalString (version != null) "-${version}"}";,./,../,${pkgs.doas}/bin/doas,${settings.user.username},settings.system,powerBI,settings,settings.user,/home/youssef/winapps-setup.log,${userdir},mkOOSLinkSet,waydroid,username,userdir,settings.user.persistentStorage+",thunderbird,./libvirt,paths.storage,paths.pkglists,p,k,settings.user.name,system = settings.system.arch;,settings.system.arch,org.garudalinux.firedragon,virtualization,zen,nixpkgs,nixpkgs-stable,nixpkgs-unstable,nixpkgs-unstable";,"nixpkgsRef/nixpkgs-unstable";,"nixpkgsRef/nixpkgs-stable";,"nixpkgs/nixpkgs-unstable";,"nixpkgs/nixpkgs";,nixpkgs.follows = "nixpkgs",(
+Search History=/home/${settings.user.username}/winapps-setup.log,${inputs.winapps.packages.${settings.system.arch}.winapps}/bin/winapps-setup ,${pkgs.doas}/bin/doas ,kdenliv,appstream,flatpak,aria2,hmMod,browser,pkgs-stable,pkgs.,pkgs,waydroid,adb,pkgs-s,rust,shells,devshell,kdenlive,applications/editors/emacs/build-support/,name = args.name or "emacs-${finalAttrs.pname}-${finalAttrs.version}";,neochat,nixpkgs-,config,pkglists,nixpkgs,genpod,samba,${HOME},HOME,sudo,kcalc,diff,setup.patch,../,SUDO,./,waCheck,WINAPPS_APP_BASH_SCRIPTS,Home,virsh,youssef,systemSettings,powerpoint,userSettings,hostname,chaotic,syncth,/tmp/winapps-setup.log,/Shared/@Home,generateLinks,plasma,settings.user.username,settings.user.persistentStorage,"/Shared/@Home,manager,droidcam,floorp,vscod,vscode,git,../virtualisation/libvirt,winapps,hyperv,dbus,storagePath,pkglistsPath,services,spice,polkit,boot,.config/p,.config/k,userSettings.username,system = settings.system;,settings.system,floorp.desktop,gc,virtualisation,libvirt,nixvirt,thorium,nixpkgs-patched,nix,hyprland,storage,docker,nixpkgsRef,sgx,nixpkgsRef/nixpkgs-stable,nixpkgsRef/nixpkgs-unstable,nixpkgsRef/nixpkgs-unstable";,nixpkgRef,emacs,packages,"nixpkgs","nixpkgs-unstable";,"nixpkgs-stable";,"nixpkgs/nixpkgs-unstable";,path
 
 [Kate Print Settings][Margins]
 bottom=5.47
@@ -50,9 +98,50 @@ left=6.35
 right=6.35
 top=5.47
 
+[KateSQLPlugin]
+SaveConnections=true
+
+[KateSQLPlugin][OutputCustomization][blob]
+backgroundColor=36,36,36
+font=JetBrains Mono,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+foregroundColor=255,255,255
+
+[KateSQLPlugin][OutputCustomization][bool]
+backgroundColor=36,36,36
+font=JetBrains Mono,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+foregroundColor=255,255,255
+
+[KateSQLPlugin][OutputCustomization][datetime]
+backgroundColor=36,36,36
+font=JetBrains Mono,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+foregroundColor=255,255,255
+
+[KateSQLPlugin][OutputCustomization][null]
+backgroundColor=36,36,36
+font=JetBrains Mono,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+foregroundColor=255,255,255
+
+[KateSQLPlugin][OutputCustomization][number]
+backgroundColor=36,36,36
+font=JetBrains Mono,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+foregroundColor=255,255,255
+
+[KateSQLPlugin][OutputCustomization][text]
+backgroundColor=36,36,36
+font=JetBrains Mono,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+foregroundColor=255,255,255
+
+[Konsole]
+AutoSyncronizeMode=0
+KonsoleEscKeyBehaviour=true
+KonsoleEscKeyExceptions=vi,vim,nvim,git
+RemoveExtension=false
+RunPrefix=
+SetEditor=false
+
 [MainWindow]
 1536x864 screen: Window-Maximized=true
-2 screens: Height=834
+2 screens: Height=835
 2 screens: Width=720
 2 screens: Window-Maximized=true
 
@@ -87,11 +176,17 @@ DontPrintFoldedCode=true
 Legend=false
 LineNumbers=false
 
+[Replicode]
+replicodePath=
+
 [UiSettings]
 ColorScheme[$i]=Krita dark orange
 
+[debugplugin]
+DAPConfiguration=
+
 [filetree]
-editShade=31,81,106
+editShade=183,220,246
 listMode=false
 middleClickToClose=false
 shadingEnabled=true
@@ -99,13 +194,13 @@ showCloseButton=false
 showFullPathOnRoots=false
 showToolbar=true
 sortRole=0
-viewShade=81,49,95
+viewShade=211,190,222
 
 [lspclient]
-AllowedServerCommandLines=/etc/profiles/per-user/youssef/bin/bash-language-server start,/etc/profiles/per-user/youssef/bin/marksman server,/etc/profiles/per-user/youssef/bin/nil,/home/youssef/.nix-profile/bin/bash-language-server start,/home/youssef/.nix-profile/bin/nil,/run/current-system/sw/bin/bash-language-server start
+AllowedServerCommandLines=/etc/profiles/per-user/youssef/bin/bash-language-server start,/etc/profiles/per-user/youssef/bin/marksman server,/etc/profiles/per-user/youssef/bin/nil
 AutoHover=true
 AutoImport=true
-BlockedServerCommandLines=
+BlockedServerCommandLines=/etc/profiles/per-user/youssef/bin/yaml-language-server --stdio,/home/youssef/.nix-profile/bin/nil
 CompletionDocumentation=true
 CompletionParens=true
 Diagnostics=true
@@ -123,3 +218,14 @@ SymbolExpand=true
 SymbolSort=false
 SymbolTree=true
 TypeFormatting=false
+
+[project]
+autoCMake=true
+autorepository=git,subversion,mercurial,fossil
+gitStatusDoubleClick=3
+gitStatusSingleClick=0
+index=false
+indexDirectory=
+multiProjectCompletion=false
+multiProjectGoto=false
+restoreProjectsForSessions=true

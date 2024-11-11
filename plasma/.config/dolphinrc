@@ -8,13 +8,14 @@ DirHistory\x5b$e\x5d[$i]=/Volume/@Repo/
 
 [General]
 Version=202
-ViewPropsTimestamp=2024,10,20,15,28,11.419
+ViewPropsTimestamp=2024,10,21,19,47,49.349
 
 [KFileDialog Settings]
 Places Icons Auto-resize=false
 Places Icons Static Size=22
 
 [MainWindow]
+MenuBar=Disabled
 ToolBarsMovable=Disabled
 
 [PreviewSettings]

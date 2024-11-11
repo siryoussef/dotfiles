@@ -3,7 +3,7 @@
         "data": [
             {
                 "autoRotation": "InTabletMode",
-                "brightness": 1,
+                "brightness": 0.3,
                 "colorProfileSource": "sRGB",
                 "connectorName": "eDP-1",
                 "edidHash": "c5996b887786a4aa4c33e59116381225",
@@ -26,7 +26,7 @@
             },
             {
                 "autoRotation": "InTabletMode",
-                "brightness": 1,
+                "brightness": 0.3,
                 "colorProfileSource": "sRGB",
                 "connectorName": "DP-4",
                 "edidHash": "dd616b25401869170657128c9f013e5b",
@@ -61,7 +61,7 @@
                         "outputIndex": 0,
                         "position": {
                             "x": 1080,
-                            "y": 893
+                            "y": 960
                         },
                         "priority": 0
                     },
